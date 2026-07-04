@@ -65,7 +65,7 @@ const services = [
   {
     id: "perde",
     title: "Perde Yıkama",
-    image: "/images/sliders/perde.webp",
+    image: "/images/hizmetler/showcase-perde.jpg",
     alt: "Stor perde yıkama ve temizlik hizmeti — Ferah Temizlik",
     content: [
       "Perde yıkama hizmetimiz kapsamında düz stor perde, zebra perde, güneşlik stor perde ve tül stor perdeleriniz profesyonel olarak temizlenmektedir.",
