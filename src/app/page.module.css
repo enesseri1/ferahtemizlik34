@@ -63,15 +63,24 @@
   color: var(--color-text);
 }
 
-.aboutText .btn {
-  margin-top: 0.5rem;
+/* ── About — tam genişlik, ortada ── */
+.aboutTextFull {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutTextFull p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
 }
 
 /* Hakkımızda butonu her zaman ortada */
 .aboutBtnWrap {
   display: flex;
   justify-content: center;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   width: 100%;
 }
 

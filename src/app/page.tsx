@@ -133,46 +133,31 @@ export default function HomePage() {
               İstanbul Anadolu Yakası&apos;nın tüm ilçelerinde güvenilir halı ve koltuk yıkama
             </p>
           </div>
-          <div className={styles.aboutGrid}>
-            <div className={styles.aboutText}>
-              <p>
-                <strong>Ferah Temizlik</strong> olarak İstanbul Anadolu Yakası&apos;nın{" "}
-                <strong>tüm ilçelerinde</strong> halı yıkama,{" "}
-                <strong>yerinde koltuk yıkama</strong>, araç koltuk yıkama ve kuru temizleme
-                hizmetleri sunuyoruz. Kadıköy&apos;den Şile&apos;ye, Beykoz&apos;dan
-                Tuzla&apos;ya kadar tüm Anadolu Yakası&apos;na hizmet götürüyoruz.
-              </p>
-              <p>
-                Koltuklar günlük yaşamda toz akarı, bakteri ve alerjenler biriktirir.
-                Profesyonel koltuk yıkama hizmetimiz ile koltuklarınızı evinizden
-                çıkarmadan, kapınıza kadar gelerek{" "}
-                <strong>sıcak su ekstraksiyonu</strong> yöntemiyle derinlemesine
-                temizliyoruz. Tüm işlem 1-2 saat içinde tamamlanır, koltuklar
-                aynı gün kullanıma hazır hale gelir.
-              </p>
-              <p>
-                Halı yıkamada halılarınızı adresinizden <strong>ücretsiz</strong>{" "}
-                alıyor, modern tesislerimizde yıkıyor ve temiz halılarınızı kapınıza
-                teslim ediyoruz.
-              </p>
-              <div className={styles.aboutBtnWrap}>
-                <Link href="/hakkimizda" className="btn btn-primary">
-                  Hakkımızda Daha Fazla
-                </Link>
-              </div>
-            </div>
-            <div className={styles.aboutStats}>
-              {[
-                { val: "14",   lbl: "İlçede Hizmet" },
-                { val: "45+",  lbl: "Hizmet Çeşidi" },
-                { val: "%100", lbl: "Memnuniyet" },
-                { val: "7/24", lbl: "Randevu" },
-              ].map((s) => (
-                <div key={s.lbl} className={styles.stat}>
-                  <strong>{s.val}</strong>
-                  <span>{s.lbl}</span>
-                </div>
-              ))}
+          <div className={styles.aboutTextFull}>
+            <p>
+              <strong>Ferah Temizlik</strong> olarak <strong>2023&apos;den bu yana</strong>{" "}
+              İstanbul Anadolu Yakası&apos;nın <strong>tüm ilçelerinde</strong> halı yıkama,{" "}
+              <strong>yerinde koltuk yıkama</strong>, araç koltuk yıkama ve kuru temizleme
+              hizmetleri sunuyoruz. Kadıköy&apos;den Şile&apos;ye, Beykoz&apos;dan
+              Tuzla&apos;ya kadar tüm Anadolu Yakası&apos;na güvenilir hizmet götürüyoruz.
+            </p>
+            <p>
+              Koltuklar günlük yaşamda toz akarı, bakteri ve alerjenler biriktirir.
+              Profesyonel koltuk yıkama hizmetimiz ile koltuklarınızı evinizden
+              çıkarmadan, kapınıza kadar gelerek{" "}
+              <strong>sıcak su ekstraksiyonu</strong> yöntemiyle derinlemesine
+              temizliyoruz. Tüm işlem 1-2 saat içinde tamamlanır, koltuklar
+              aynı gün kullanıma hazır hale gelir.
+            </p>
+            <p>
+              Halı yıkamada halılarınızı adresinizden <strong>ücretsiz</strong>{" "}
+              alıyor, modern tesislerimizde yıkıyor ve temiz halılarınızı kapınıza
+              teslim ediyoruz.
+            </p>
+            <div className={styles.aboutBtnWrap}>
+              <Link href="/hakkimizda" className="btn btn-primary">
+                Hakkımızda Daha Fazla
+              </Link>
             </div>
           </div>
         </div>
