@@ -12,9 +12,10 @@
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
+/* ── Logo ── */
 .logo {
   display: flex;
   align-items: center;
@@ -38,6 +39,7 @@
   color: var(--color-text-muted);
 }
 
+/* ── Nav ── */
 .nav {
   flex: 1;
   display: flex;
@@ -47,16 +49,17 @@
 .navList {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.15rem;
 }
 
 .navLink {
-  padding: 0.5rem 0.85rem;
-  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text);
   border-radius: var(--radius-sm);
   transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
 }
 
 .navLink:hover {
@@ -64,17 +67,40 @@
   background: rgba(15, 118, 110, 0.08);
 }
 
+/* ── Actions ── */
 .actions {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .callBtn {
   font-size: 0.875rem;
   padding: 0.6rem 1.1rem;
+  gap: 0.4rem;
 }
 
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  background: #25d366;
+  color: #fff;
+  transition: background var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+
+.whatsappBtn:hover {
+  background: #1da851;
+  transform: translateY(-1px);
+}
+
+/* ── Hamburger ── */
 .menuToggle {
   display: none;
   width: 44px;
@@ -82,6 +108,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
+  flex-shrink: 0;
 }
 
 .hamburger,
@@ -106,28 +133,21 @@
   left: 0;
 }
 
-.hamburger::before {
-  top: -7px;
-}
+.hamburger::before { top: -7px; }
+.hamburger::after  { top:  7px; }
 
-.hamburger::after {
-  top: 7px;
-}
+.hamburgerOpen { background: transparent; }
+.hamburgerOpen::before { transform: translateY(7px) rotate(45deg); }
+.hamburgerOpen::after  { transform: translateY(-7px) rotate(-45deg); }
 
-.hamburgerOpen {
-  background: transparent;
-}
+.overlay { display: none; }
 
-.hamburgerOpen::before {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburgerOpen::after {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-.overlay {
-  display: none;
+/* ── Mobile ── */
+@media (max-width: 1024px) {
+  .navLink {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.6rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -135,6 +155,7 @@
     display: flex;
   }
 
+  /* Mobile nav drawer */
   .nav {
     position: fixed;
     top: var(--header-height);
@@ -147,6 +168,7 @@
     transition: transform var(--transition);
     z-index: 101;
     padding: 1.5rem;
+    overflow-y: auto;
   }
 
   .navOpen {
@@ -176,12 +198,26 @@
     cursor: pointer;
   }
 
+  /* Mobile buttons: icon only, pill shape */
+  .btnLabel {
+    display: none;
+  }
+
   .callBtn {
-    padding: 0.6rem;
+    padding: 0;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    font-size: 0;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .whatsappBtn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
     gap: 0;
   }
 }
@@ -190,8 +226,7 @@
   .logoText small {
     display: none;
   }
-
   .logoText strong {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 }

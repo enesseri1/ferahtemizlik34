@@ -99,6 +99,7 @@ button {
   color: var(--color-text);
   margin-bottom: 0.75rem;
   line-height: 1.2;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -106,6 +107,7 @@ button {
   color: var(--color-text-muted);
   max-width: 640px;
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .btn {
@@ -201,8 +203,11 @@ button {
   font-size: 1.05rem;
   opacity: 0.9;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0.5rem auto 0;
 }
+
+/* Hizmet anchor scroll offset */
+[id] { scroll-margin-top: calc(var(--header-height) + 1rem); }
 
 .breadcrumb {
   display: flex;

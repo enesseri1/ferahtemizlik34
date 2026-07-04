@@ -10,152 +10,194 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "sancaktepe-koltuk-yikama-hizmeti",
-    title: "Sancaktepe Koltuk Yıkama Hizmeti: Yerinde Profesyonel Temizlik Rehberi",
+    slug: "anadolu-yakasi-koltuk-yikama-rehberi",
+    title: "Anadolu Yakası Koltuk Yıkama: Kapsamlı Hizmet ve Fiyat Rehberi 2026",
     excerpt:
-      "Sancaktepe'de koltuk yıkama hizmeti arayanlar için yerinde temizlik, fiyat bilgisi ve profesyonel koltuk bakımı hakkında kapsamlı rehber.",
-    date: "2026-06-15",
-    readTime: "8 dk",
-    category: "Koltuk Yıkama",
-    content: `
-      <p>Sancaktepe koltuk yıkama hizmeti, evinizdeki koltukların derinlemesine temizlenmesi ve hijyenik hale getirilmesi için en etkili çözümdür. Ferah Temizlik olarak Sancaktepe ve çevre ilçelerde yerinde koltuk yıkama hizmeti sunuyoruz. Koltuklarınız günlük kullanımda toz, kir, leke ve mikroorganizmalar biriktirir; bu nedenle düzenli profesyonel temizlik hem sağlık hem de estetik açıdan büyük önem taşır.</p>
-      <h2>Sancaktepe'de Yerinde Koltuk Yıkama Neden Önemli?</h2>
-      <p>Koltuklar evimizin en çok kullanılan mobilyalarıdır. Çocuklar, evcil hayvanlar ve günlük yaşam koltuklarda biriken kir, toz akarı, bakteri ve alerjen maddelerin birikmesine neden olur. Sancaktepe koltuk yıkama hizmeti ile koltuklarınızı evinizden çıkarmadan, kapınıza kadar gelerek profesyonel ekipmanlarımızla temizliyoruz.</p>
-      <p>Yerinde koltuk yıkama avantajları arasında taşıma zahmeti olmaması, koltukların aynı gün kullanıma hazır hale gelmesi ve kumaş tipine uygun özel temizlik yöntemlerinin uygulanması yer alır. Chester koltuk, L koltuk, nubuk koltuk, süet koltuk ve keten koltuk gibi farklı kumaş türlerinde uzman ekibimizle hizmet veriyoruz.</p>
-      <h2>Profesyonel Koltuk Yıkama Süreci</h2>
-      <p>Ferah Temizlik olarak Sancaktepe koltuk yıkama sürecimiz şu adımlardan oluşur: önce koltuk kumaşı analiz edilir, ardından vakum ve ön temizlik yapılır, leke çıkarıcı uygulanır, derin yıkama makinesi ile temizlik gerçekleştirilir ve son olarak kurutma işlemi tamamlanır. Tüm bu süreç ortalama 2-4 saat içinde tamamlanır.</p>
-      <h2>Sancaktepe Koltuk Yıkama Fiyatları</h2>
-      <p>Koltuk yıkama fiyatları koltuk tipine, kumaş cinsine ve adet sayısına göre değişiklik gösterir. Tek kişilik koltuk setleri 1.500 TL'den, L koltuk takımları 2.000 TL'den, Chester koltuk takımları ise 3.500 TL'den başlamaktadır. Kesin fiyat için ücretsiz keşif hizmetimizden yararlanabilirsiniz.</p>
-      <h2>Hizmet Bölgelerimiz</h2>
-      <p>Sancaktepe'nin yanı sıra Sultanbeyli, Pendik, Kartal, Çekmeköy, Ataşehir, Maltepe ve Tuzla ilçelerinde de yerinde koltuk yıkama hizmeti sunmaktayız. İstanbul Anadolu Yakası'nın tamamına hizmet veren Ferah Temizlik, 7 yıllık deneyimiyle güvenilir temizlik çözümleri sunar.</p>
-    `,
-  },
-  {
-    slug: "sultanbeyli-hali-yikama-fiyatlari",
-    title: "Sultanbeyli Halı Yıkama Fiyatları 2026: Güncel Liste ve Hizmet Detayları",
-    excerpt:
-      "Sultanbeyli halı yıkama fiyatları, makine halısı, yün halı ve el dokuma halı temizlik ücretleri hakkında güncel bilgiler.",
-    date: "2026-06-10",
-    readTime: "7 dk",
-    category: "Halı Yıkama",
-    content: `
-      <p>Sultanbeyli halı yıkama fiyatları, halı cinsine, metrekare büyüklüğüne ve özel işlem gereksinimlerine göre belirlenmektedir. Ferah Temizlik olarak Sultanbeyli ve çevre bölgelerde ücretsiz alım-teslim hizmetiyle profesyonel halı yıkama sunuyoruz.</p>
-      <h2>Sultanbeyli Halı Yıkama Hizmeti</h2>
-      <p>Halılarınız evinizin en değerli tekstil ürünleridir ve düzenli temizlik hem görünüm hem de sağlık açısından kritik öneme sahiptir. Sultanbeyli halı yıkama hizmetimizde halılarınızı adresinizden ücretsiz olarak alıyor, modern yıkama tesislerimizde derinlemesine temizliyor ve kuruttuktan sonra tekrar kapınıza teslim ediyoruz.</p>
-      <h2>Halı Yıkama Fiyat Listesi</h2>
-      <p>Makine halıları metrekare başına 120 TL, akrilik halılar 150 TL, shaggy halılar 150 TL, bambu halılar 180 TL, viskon halılar 200 TL, yün halı (makina) 200 TL, yün halı (el dokuma) 300 TL, Anadolu kilimi 350 TL olarak fiyatlandırılmaktadır. Tüm fiyatlara ücretsiz alım-teslim dahildir.</p>
-      <h2>Halı Yıkama Sürecimiz</h2>
-      <p>Halılarınız önce toz ve kirden arındırılır, leke ön işlemi uygulanır, özel halı yıkama makinelerinde yıkanır, santrifüj ile suyu alınır ve kontrollü ortamda kurutulur. Her halı türü için uygun deterjan ve yıkama programı kullanılmaktadır.</p>
-      <h2>Neden Ferah Temizlik?</h2>
-      <p>Sultanbeyli ve İstanbul Anadolu Yakası'nda güvenilir halı yıkama hizmeti arayanlar için Ferah Temizlik, şeffaf fiyatlandırma, zamanında teslimat ve %100 müşteri memnuniyeti garantisi sunmaktadır.</p>
-    `,
-  },
-  {
-    slug: "pendik-arac-koltuk-yikama",
-    title: "Pendik Araç Koltuk Yıkama: Otomobil İç Temizliği ve Fiyat Bilgisi",
-    excerpt:
-      "Pendik araç koltuk yıkama hizmeti ile otomobilinizin koltuklarını yerinde profesyonel olarak temizletin. Deri ve kumaş koltuk bakımı.",
-    date: "2026-06-05",
-    readTime: "6 dk",
-    category: "Araç Koltuk Yıkama",
-    content: `
-      <p>Pendik araç koltuk yıkama hizmeti, aracınızın iç mekan hijyenini sağlamak ve koltukların ömrünü uzatmak için vazgeçilmez bir bakım hizmetidir. Ferah Temizlik olarak Pendik ve çevre ilçelerde yerinde araç koltuk yıkama hizmeti sunmaktayız.</p>
-      <h2>Araç Koltuk Yıkama Neden Gerekli?</h2>
-      <p>Araç koltukları günlük kullanımda yiyecek lekeleri, toz, ter, sigara dumanı ve bakteriler biriktirir. Özellikle çocuklu aileler ve evcil hayvan sahipleri için düzenli araç koltuk temizliği sağlık açısından büyük önem taşır. Pendik araç koltuk yıkama hizmetimiz ile aracınızın bulunduğu yere gelerek koltukları derinlemesine temizliyoruz.</p>
-      <h2>Deri ve Kumaş Koltuk Temizliği</h2>
-      <p>Hem deri hem de kumaş araç koltukları için özel temizlik ürünleri ve teknikleri kullanıyoruz. Deri koltuklarda nemlendirme ve koruma işlemi, kumaş koltuklarda ise buharlı derin temizlik uygulanmaktadır. Araç koltuk yıkama fiyatımız 3.000 TL'dir.</p>
-      <h2>Pendik ve Çevre İlçelerde Hizmet</h2>
-      <p>Pendik'in yanı sıra Kartal, Sancaktepe, Sultanbeyli, Çekmeköy ve Tuzla'da da araç koltuk yıkama hizmeti vermekteyiz. Randevu almak için bizi arayabilir veya WhatsApp üzerinden iletişime geçebilirsiniz.</p>
-    `,
-  },
-  {
-    slug: "kartal-yerinde-koltuk-yikama",
-    title: "Kartal Yerinde Koltuk Yıkama: Evinize Gelen Profesyonel Temizlik Ekibi",
-    excerpt:
-      "Kartal yerinde koltuk yıkama hizmeti ile koltuklarınızı evinizden çıkarmadan temizletin. Profesyonel ekip, uygun fiyat, hızlı hizmet.",
-    date: "2026-05-28",
-    readTime: "7 dk",
-    category: "Koltuk Yıkama",
-    content: `
-      <p>Kartal yerinde koltuk yıkama, koltuklarınızı taşıma derdi olmadan evinizde profesyonel olarak temizletmenizi sağlayan modern bir hizmettir. Ferah Temizlik, Kartal ve Anadolu Yakası genelinde yerinde koltuk yıkama konusunda uzmanlaşmış ekibiyle hizmet vermektedir.</p>
-      <h2>Yerinde Koltuk Yıkamanın Avantajları</h2>
-      <p>Koltuklarınızı fabrikaya veya yıkama tesisine göndermek yerine, uzman ekibimizin evinize gelmesi hem zaman hem de emek tasarrufu sağlar. Yerinde koltuk yıkama ile koltuklarınız aynı gün temizlenir ve kullanıma hazır hale getirilir. Özellikle büyük koltuk takımları ve L koltuklar için ideal bir çözümdür.</p>
-      <h2>Hangi Koltuk Türlerini Yıkıyoruz?</h2>
-      <p>Kartal yerinde koltuk yıkama hizmetimiz kapsamında chester koltuk, L koltuk, nubuk koltuk, süet koltuk, keten koltuk, tay tüyü koltuk, berjer, çekyat, puf ve yatak başlığı temizliği yapılmaktadır. Her kumaş tipi için uygun temizlik yöntemi ve ürünleri kullanılmaktadır.</p>
-      <h2>Kartal Koltuk Yıkama Randevusu</h2>
-      <p>Kartal koltuk yıkama randevusu almak için +90 542 763 28 61 numaralı telefondan bizi arayabilir veya WhatsApp üzerinden mesaj gönderebilirsiniz. Ücretsiz keşif hizmetimizle koltuklarınızın durumunu değerlendirip size en uygun fiyat teklifini sunuyoruz.</p>
-    `,
-  },
-  {
-    slug: "cekmekoy-hali-ve-koltuk-yikama",
-    title: "Çekmeköy Halı ve Koltuk Yıkama: Kapsamlı Temizlik Hizmetleri",
-    excerpt:
-      "Çekmeköy halı yıkama ve koltuk yıkama hizmetleri. Ücretsiz alım-teslim, yerinde koltuk temizliği ve uygun fiyat garantisi.",
-    date: "2026-05-20",
-    readTime: "8 dk",
-    category: "Genel",
-    content: `
-      <p>Çekmeköy halı ve koltuk yıkama hizmetleri, evinizin hijyenini en üst düzeye çıkarmak için ihtiyaç duyduğunuz profesyonel temizlik çözümleridir. Ferah Temizlik olarak Çekmeköy ve İstanbul Anadolu Yakası'nın tamamında halı yıkama ve yerinde koltuk yıkama hizmeti sunuyoruz.</p>
-      <h2>Çekmeköy Halı Yıkama</h2>
-      <p>Halılarınızı Çekmeköy'deki adresinizden ücretsiz olarak alıyor, profesyonel tesislerimizde yıkıyor ve temiz halılarınızı kapınıza teslim ediyoruz. Makine halısından el dokuma yün halıya, shaggy halıdan Anadolu kilimine kadar tüm halı türlerinde uzmanız.</p>
-      <h2>Çekmeköy Koltuk Yıkama</h2>
-      <p>Koltuk yıkama hizmetimiz yerinde gerçekleştirilmektedir. Ekibimiz Çekmeköy'deki evinize veya iş yerinize gelerek koltuklarınızı profesyonel ekipmanlarla temizler. Buharlı temizlik, leke çıkarma ve dezenfeksiyon işlemleri dahildir.</p>
-      <h2>Hizmet Kalitemiz</h2>
-      <p>Çekmeköy halı ve koltuk yıkama hizmetlerimizde çevre dostu deterjanlar, ileri teknoloji yıkama makineleri ve deneyimli personel kullanılmaktadır. Müşteri memnuniyeti odaklı çalışma prensibimizle binlerce mutlu müşteriye hizmet verdik.</p>
-    `,
-  },
-  {
-    slug: "koltuk-yikama-neden-onemli",
-    title: "Koltuk Yıkama Neden Önemli? Sağlık ve Hijyen Açısından Koltuk Temizliği",
-    excerpt:
-      "Koltuk yıkamanın sağlık, hijyen ve estetik açıdan önemi. Evinizdeki koltukların ne sıklıkla temizlenmesi gerektiği hakkında bilgiler.",
-    date: "2026-05-15",
+      "İstanbul Anadolu Yakası'nda yerinde koltuk yıkama, hangi ilçelere hizmet veriliyor, fiyatlar nasıl belirleniyor? 2026 güncel rehber.",
+    date: "2026-06-20",
     readTime: "9 dk",
     category: "Koltuk Yıkama",
     content: `
-      <p>Koltuk yıkama, ev hijyeninin en kritik unsurlarından biridir. Koltuklar günlük yaşamda en çok temas edilen yüzeyler olup toz akarı, bakteri, virüs, mantar sporları ve alerjen maddelerin birikmesine neden olur. Profesyonel koltuk yıkama hizmeti ile bu riskleri ortadan kaldırabilirsiniz.</p>
-      <h2>Koltuklarda Biriken Kir ve Mikroorganizmalar</h2>
-      <p>Araştırmalar, ortalama bir koltuğun yüzeyinde milyonlarca bakteri ve binlerce toz akarı bulunduğunu göstermektedir. Özellikle çocuklu aileler, alerji hastaları ve evcil hayvan sahipleri için düzenli koltuk yıkama hayati önem taşır. Ferah Temizlik olarak İstanbul Anadolu Yakası'nda yerinde koltuk yıkama ile bu sorunu kökten çözüyoruz.</p>
-      <h2>Ne Sıklıkla Koltuk Yıkama Yapılmalı?</h2>
-      <p>Uzmanlar, koltukların en az yılda bir kez profesyonel olarak yıkanmasını önermektedir. Evcil hayvan bulunan evlerde, çocuklu ailelerde ve sigara içilen ortamlarda bu süre 6 aya düşürülmelidir. Düzenli koltuk yıkama hem sağlığınızı korur hem de koltuklarınızın ömrünü uzatır.</p>
-      <h2>Profesyonel vs Ev Tipi Temizlik</h2>
-      <p>Ev tipi temizlik ürünleri yüzeysel temizlik sağlarken, profesyonel koltuk yıkama makineleri koltukların derinliklerine kadar temizlik yapar. Buharlı temizlik teknolojisi ile %99,9 oranında bakteri ve virüs eliminasyonu sağlanır.</p>
+      <p>Anadolu Yakası koltuk yıkama hizmetleri hakkında her şey: hangi ilçelere gidiyoruz, fiyatlar nasıl belirleniyor, aynı gün kuruma mümkün mü? Bu rehberde tüm sorularınızı yanıtladık.</p>
+      <h2>Neden Anadolu Yakası'na Özel Hizmet?</h2>
+      <p>İstanbul'un Anadolu yakası, Avrupa yakasına kıyasla köprü ve tünel geçişi gerektirmeden kendi içinde ulaşım açısından bütünlüklü bir bölgedir. Bu nedenle Ferah Temizlik ekibi yalnızca Anadolu yakasında faaliyet gösterir; aynı gün birden fazla randevu kabul edebilir ve hizmet kalitesini düşürmeden tüm ilçelere ulaşabilir.</p>
+      <h2>Hizmet Verilen Tüm İlçeler</h2>
+      <p>Kadıköy'den Tuzla'ya, Üsküdar'dan Şile'ye kadar tüm Anadolu Yakası ilçelerinde aynı ekip, aynı profesyonel standartla hizmet verir. Özellikle yoğun hizmet bölgelerimiz şunlardır:</p>
+      <ul>
+        <li><strong>Sancaktepe</strong> — Samdancıra, Emek, Sarıgazi, Yenidoğan mahalleleri</li>
+        <li><strong>Sultanbeyli</strong> — Tüm mahalleler</li>
+        <li><strong>Pendik</strong> — Kurtköy, Kaynarca, Güzelyalı, Esenyalı</li>
+        <li><strong>Kartal</strong> — Petrol İş, Uğur Mumcu, Orhantepe</li>
+        <li><strong>Çekmeköy</strong> — Tüm mahalleler</li>
+        <li>Ayrıca Ataşehir, Maltepe, Tuzla, Ümraniye ve Beykoz</li>
+      </ul>
+      <h2>Koltuk Yıkama Sürecimiz</h2>
+      <p>Ferah Temizlik olarak yerinde koltuk yıkama sürecimiz şu adımlardan oluşur: randevu saatinde adresinize gelir, koltuk kumaşını inceleriz; kumaş tipine uygun yöntem belirlenir. Klasik kumaşlarda sıcak su ekstraksiyonu, süet ve nubukta düşük nem kuru temizleme, gerçek deride özel deri bakım ürünleriyle temizlik yapılır. Tüm işlem 1-2 saat içinde tamamlanır; koltuklar aynı gün kullanılabilir hale gelir.</p>
+      <h2>2026 Fiyat Bilgisi</h2>
+      <p>Güncel koltuk yıkama fiyatları için <a href="/fiyat-listesi">fiyat listemizi</a> inceleyebilirsiniz. Sancaktepe, Sultanbeyli, Pendik, Kartal ve tüm Anadolu Yakası ilçelerinde mesafe farkı uygulanmadan hizmet veriyoruz. Kesin fiyat için WhatsApp'tan koltuk fotoğrafı gönderin, 15 dakika içinde yazılı ön fiyat alın.</p>
     `,
   },
   {
-    slug: "hali-yikama-ipuclari",
-    title: "Halı Yıkama İpuçları: Halılarınızı Uzun Süre Temiz Tutmanın Yolları",
+    slug: "kartal-koltuk-yikama",
+    title: "Kartal Koltuk Yıkama: Uygun Fiyat, Hızlı Randevu",
     excerpt:
-      "Halı bakımı ve temizliği hakkında pratik ipuçları. Halılarınızın ömrünü uzatmak için dikkat edilmesi gerekenler.",
-    date: "2026-05-08",
+      "Kartal'da yerinde koltuk yıkama ve halı yıkama hizmeti. Kartal genelinde aynı gün randevu mümkün. Fiyatlar ve hizmet detayları.",
+    date: "2026-06-15",
     readTime: "7 dk",
+    category: "Koltuk Yıkama",
+    content: `
+      <p>Kartal koltuk yıkama ve halı yıkama hizmeti. Kartal'da yerinde koltuk temizliği — aynı gün randevu mümkün.</p>
+      <h2>Kartal'da Yerinde Koltuk Yıkama</h2>
+      <p>Kartal, Maltepe ile Pendik arasında yer alan, sahil şeridiyle tanınan bir Anadolu Yakası ilçesidir. Petrol İş, Uğur Mumcu ve Orhantepe mahalleleri dahil tüm Kartal genelinde yerinde koltuk yıkama hizmeti veriyoruz.</p>
+      <p>Ekibimiz randevu saatinde adresinize gelir. İnceleme sonrasında kumaş tipine uygun yöntem belirlenir:</p>
+      <ul>
+        <li>Klasik kumaşlar ve chester: sıcak su ekstraksiyonu</li>
+        <li>Süet ve nubuk: düşük nem kuru temizleme</li>
+        <li>Gerçek deri ve alcantara: özel deri bakım ürünleriyle temizlik</li>
+      </ul>
+      <p>Tüm işlem 1-2 saat sürer; koltuk aynı gün kullanılabilir hale gelir.</p>
+      <h2>Kartal Halı Yıkama</h2>
+      <p>Kartal'da halı yıkama hizmetimizde halılarınızı adresinizden <strong>ücretsiz</strong> alıyor, modern yıkama tesislerimizde temizliyor ve kuruttuktan sonra kapınıza teslim ediyoruz. Makine halısı, yün halı, shaggy, el dokuma ve viskon halı gibi tüm halı türlerinde hizmet verilmektedir.</p>
+      <h2>Kartal'da Randevu Alma</h2>
+      <p>Kartal koltuk yıkama randevusu almak için <strong>+90 542 763 28 61</strong> numaralı telefondan arayabilir veya WhatsApp üzerinden fotoğraf göndererek hızlı fiyat alabilirsiniz. Kartal genelinde mesafe farkı uygulanmaz.</p>
+    `,
+  },
+  {
+    slug: "sancaktepe-koltuk-yikama",
+    title: "Sancaktepe Koltuk Yıkama: Kapınıza Gelen Profesyonel Temizlik",
+    excerpt:
+      "Sancaktepe yerinde koltuk yıkama, halı yıkama ve araç koltuk temizliği. Koltuklarınızı taşımanıza gerek yok.",
+    date: "2026-06-10",
+    readTime: "7 dk",
+    category: "Koltuk Yıkama",
+    content: `
+      <p>Sancaktepe koltuk yıkama, halı yıkama ve araç koltuk temizliği hizmeti. Koltuklarınızı taşımanıza gerek yok — ekibimiz kapınıza gelir.</p>
+      <h2>Sancaktepe'de Yerinde Koltuk Yıkama</h2>
+      <p>Sancaktepe, Anadolu Yakası'nın kuzey kesiminde yer alan ve son yıllarda hızla gelişen büyük bir ilçedir. Samandıra, Emek, Sarıgazi ve Yenidoğan mahallelerini kapsayan Sancaktepe'de Ferah Temizlik kapınıza geliyor.</p>
+      <h2>Sancaktepe'de Sunduğumuz Hizmetler</h2>
+      <ul>
+        <li><strong>Yerinde Koltuk Yıkama:</strong> Sancaktepe genelinde tüm koltuk tiplerinde sıcak su ekstraksiyonu yöntemiyle temizlik.</li>
+        <li><strong>Halı Yıkama:</strong> Kapınızdan ücretsiz alım; makine, yün, viskon, shaggy ve el dokuma halılar.</li>
+        <li><strong>Araç Koltuk Yıkama:</strong> Sancaktepe ve Sarıgazi çevresinde araç adresine servis.</li>
+      </ul>
+      <h2>Neden Ferah Temizlik?</h2>
+      <p>Profesyonel ekip, modern ekipman ve şeffaf fiyatlandırma ile Sancaktepe'nin güvenilir temizlik partneri olmaktan gurur duyuyoruz. Tüm koltuk tiplerinde uzmanlaşmış ekibimiz Chester, L koltuk, süet, nubuk, keten ve tay tüyü koltukları başarıyla temizlemektedir.</p>
+    `,
+  },
+  {
+    slug: "pendik-koltuk-yikama",
+    title: "Pendik Koltuk Yıkama: Yerinde Hizmet, 2026 Fiyatları ve Randevu",
+    excerpt:
+      "Pendik'te yerinde koltuk yıkama hizmeti: hangi kumaşlar yıkanır, fiyatlar nedir, aynı gün randevu mümkün mü?",
+    date: "2026-06-05",
+    readTime: "7 dk",
+    category: "Koltuk Yıkama",
+    content: `
+      <p>Pendik'te yerinde koltuk yıkama hizmeti: hangi kumaşlar yıkanır, fiyatlar nedir, aynı gün randevu mümkün mü? Pendik koltuk temizliği rehberi.</p>
+      <h2>Pendik'te Yerinde Koltuk Yıkama</h2>
+      <p>Pendik, Anadolu Yakası'nın en büyük ilçelerinden biridir. Kurtköy, Kaynarca, Güzelyalı ve Esenyalı gibi farklı mahalleleri kapsayan geniş bir bölgeye hizmet veriyoruz. Pendik koltuk yıkama için ekibimiz adresinize gelir, tüm işlemleri yerinde tamamlar.</p>
+      <h2>Pendik'te Sunduğumuz Hizmetler</h2>
+      <ul>
+        <li><strong>Yerinde Koltuk Yıkama:</strong> Chester, L koltuk, süet, nubuk, tay tüyü, keten ve klasik koltuk takımları</li>
+        <li><strong>Halı Yıkama:</strong> Ücretsiz alım-teslim ile tüm halı çeşitleri</li>
+        <li><strong>Araç Koltuk Yıkama:</strong> Pendik Organize Sanayi ve çevresindeki ticari araçlar dahil</li>
+        <li><strong>Kuru Temizleme:</strong> Hassas kumaşlar için</li>
+      </ul>
+      <h2>Pendik Koltuk Yıkama Fiyatları</h2>
+      <p>Güncel koltuk yıkama ve halı yıkama fiyatları için <a href="/fiyat-listesi">fiyat listemizi</a> inceleyebilirsiniz. Pendik genelinde (Kurtköy, Kaynarca, Yenişehir, Güzelyalı, Esenyalı mahalleleri dahil) standart hizmet fiyatlarımız geçerlidir. Kesin fiyat için WhatsApp'tan koltuk fotoğrafı gönderin.</p>
+    `,
+  },
+  {
+    slug: "chester-koltuk-suet-nubuk-tay-tuyu-temizligi",
+    title: "Chester, Süet ve Nubuk Koltuk Temizliği: Özel Bakım Rehberi",
+    excerpt:
+      "Chester, süet, nubuk ve tay tüyü koltukların yıkama ve bakım süreçleri, evde yapılabilecekler ve profesyonel temizliğin farkı.",
+    date: "2026-05-28",
+    readTime: "9 dk",
+    category: "Koltuk Yıkama",
+    content: `
+      <p>Özel kumaşlı koltuklara yanlış temizlik uygulamak geri dönüşü olmayan hasara yol açabilir. Chester, süet, nubuk ve tay tüyü kumaşların her birinin farklı bir bakım protokolü vardır. Bu rehberde bu kumaşların özelliklerini ve doğru temizlik yöntemlerini anlattık.</p>
+      <h2>Chester Koltuk Temizliği</h2>
+      <p>Chester koltuğun karakteristik kapitone (düğmeli) yapısı ve sıkı dokunuşlu kumaşı, kiri derine hapseder. Geleneksel bez silme ya da ev tipi buharlı cihazlar düğme aralarına ulaşamaz ve kumaşı deforme edebilir.</p>
+      <p>Profesyonel temizlikte kullanılan ince uçlu ekstraksiyonlu başlıklar, kapitone kanallarına kadar girerek organik kirleri uzaklaştırır. Chester temizliği öncesinde mutlaka üretici etiketini kontrol edin: "W" etiketi ıslak temizliğe uygundur, "S" kuru çözücü gerektirir.</p>
+      <h2>Süet Koltuk Temizliği</h2>
+      <p>Süet, son derece hassas bir malzemedir. Su ile temas ettiğinde leke ve kalıcı iz bırakabilir. Bu nedenle süet koltukların temizliğinde özel süet temizleyiciler ve düşük nem yöntemi kullanılır. Evde uygulanan ıslak temizlik süet için kesinlikle önerilmez.</p>
+      <h2>Nubuk Koltuk Temizliği</h2>
+      <p>Nubuk, gerçek deri yüzeyinin zımparalanmasıyla elde edilen kadifemsi bir malzemedir. Süete benzer bakım gereksinimlerine sahip olmakla birlikte, daha dayanıklı bir yapıya sahiptir. Özel nubuk fırçası ve temizleyici ile düzenli bakım yapılmalıdır.</p>
+      <h2>Tay Tüyü Koltuk Temizliği</h2>
+      <p>Tay tüyü kumaş, ince ve yoğun iplikler içerdiğinden kirlerin yüzeye yapışma eğilimi yüksektir. Yanlış temizlik iplik yapısını bozabilir. Profesyonel ekstraksiyon yöntemi ve özel tay tüyü bakım solüsyonları ile güvenli temizlik sağlanır.</p>
+    `,
+  },
+  {
+    slug: "hali-yikama-frekans-ne-siklikta-yikatilmali",
+    title: "Halı Yıkama Sıklığı: Evinizin Koşullarına Göre Rehber",
+    excerpt:
+      "Halınızı yılda kaç kez yıkatmalısınız? Evcil hayvan, çocuk ve alerji durumlarına göre halı yıkama sıklığı rehberi.",
+    date: "2026-05-20",
+    readTime: "8 dk",
     category: "Halı Yıkama",
     content: `
-      <p>Halı yıkama ipuçları, halılarınızın hem görünümünü hem de ömrünü korumak için bilmeniz gereken pratik bilgileri içerir. Doğru bakım ve düzenli profesyonel temizlik ile halılarınız yıllarca yeni gibi kalabilir.</p>
-      <h2>Günlük Halı Bakımı</h2>
-      <p>Halılarınızı haftada en az iki kez vakumlamak, toz ve kir birikimini önler. Giriş kapılarına paspas koymak, halılarınıza bulaşacak kir miktarını önemli ölçüde azaltır. Leke oluştuğunda hemen müdahale etmek, kalıcı lekelerin oluşmasını engeller.</p>
-      <h2>Profesyonel Halı Yıkama Zamanı</h2>
-      <p>Halılarınızın profesyonel olarak yıkanması yılda en az bir kez önerilir. Yoğun kullanılan alanlardaki halılar 6 ayda bir yıkanmalıdır. Ferah Temizlik halı yıkama hizmeti ile halılarınızı ücretsiz alım-teslim garantisiyle temizletiyoruz.</p>
-      <h2>Halı Türüne Göre Bakım</h2>
-      <p>Her halı türünün farklı bakım gereksinimleri vardır. Yün halılar nemden korunmalı, shaggy halılar düzenli taramayla bakım yapılmalı, el dokuma halılar ise özel temizlik gerektirmektedir. Profesyonel halı yıkama firması seçerken halı türünüze uygun deneyime sahip olmasına dikkat edin.</p>
+      <p>Halı yıkama sıklığı, evinizin koşullarına bağlı olarak değişir. Doğru aralıklarla yıkanan halılar hem daha uzun ömürlü olur hem de hijyen açısından ev halkını korur.</p>
+      <h2>Standart Kullanım: Yılda 1-2 Kez</h2>
+      <p>Evde evcil hayvan ve küçük çocuk bulunmayan, düzenli vakumlanan halılar için yılda bir kez profesyonel yıkama yeterlidir. Yoğun trafiğe maruz kalan girişler, salon ve koridor gibi alanlardaki halılar için yılda iki kez önerilir.</p>
+      <h2>Evcil Hayvan Bulunan Evler: 6 Ayda Bir</h2>
+      <p>Kedi veya köpek sahibi evlerde halılarda tüy, deri döküntüsü ve alerjen birikim hızlıdır. Bu durumlarda 6 ayda bir profesyonel halı yıkama hijyen standardını korur.</p>
+      <h2>Küçük Çocuklu Aileler: 6-8 Ayda Bir</h2>
+      <p>Halıda oynayan, emekleyen ya da yemek yiyen çocukların olduğu evlerde bakteriyel birikim fazla olur. 6-8 ayda bir yıkama önerilir.</p>
+      <h2>Alerji ve Astım Hastaları: 3-4 Ayda Bir</h2>
+      <p>Toz akarı, mantar sporu ve bitki poleni tetikleyicilerine karşı duyarlı bireyler için halıların daha sık yıkanması semptomları azaltır. Bu grupta 3-4 ayda bir profesyonel temizlik uygundur.</p>
+      <h2>Ferah Temizlik ile Halı Yıkama</h2>
+      <p>İstanbul Anadolu Yakası'nda Ferah Temizlik olarak tüm halı türlerinde ücretsiz alım-teslim ile profesyonel halı yıkama hizmeti sunuyoruz. <a href="/iletisim">Hemen randevu alın</a>.</p>
     `,
   },
   {
-    slug: "istanbul-anadolu-yakasi-temizlik-hizmetleri",
-    title: "İstanbul Anadolu Yakası Temizlik Hizmetleri: Halı ve Koltuk Yıkama Rehberi",
+    slug: "buharli-koltuk-yikama-yontemi",
+    title: "Buharlı Koltuk Yıkama: Gerçekten Etkili mi? Avantajları ve Sınırları",
     excerpt:
-      "İstanbul Anadolu Yakası'nda halı yıkama, koltuk yıkama ve yerinde temizlik hizmetleri. Bölge bazlı hizmet rehberi ve fiyat bilgileri.",
-    date: "2026-05-01",
-    readTime: "10 dk",
-    category: "Genel",
+      "Buharlı koltuk yıkama yöntemi nasıl çalışır, hangi durumlarda tercih edilmeli ve ekstraksiyon yönteminden farkı nedir?",
+    date: "2026-05-12",
+    readTime: "8 dk",
+    category: "Koltuk Yıkama",
     content: `
-      <p>İstanbul Anadolu Yakası temizlik hizmetleri, bu bölgede yaşayan milyonlarca insanın ev ve iş yeri hijyeni ihtiyaçlarını karşılamaktadır. Ferah Temizlik olarak Anadolu Yakası'nın tamamında halı yıkama, yerinde koltuk yıkama, araç koltuk yıkama, perde yıkama ve kuru temizleme hizmetleri sunuyoruz.</p>
-      <h2>Anadolu Yakası Hizmet Bölgelerimiz</h2>
-      <p>Öncelikli hizmet verdiğimiz ilçeler Sancaktepe, Sultanbeyli, Pendik, Kartal ve Çekmeköy olmakla birlikte Ataşehir, Maltepe, Tuzla, Ümraniye, Beykoz ve diğer Anadolu Yakası ilçelerinde de hizmet vermekteyiz.</p>
-      <h2>Sunduğumuz Hizmetler</h2>
-      <p>Halı yıkama hizmetimizde ücretsiz alım-teslim, koltuk yıkama hizmetimizde yerinde temizlik, araç koltuk yıkama hizmetimizde mobil ekip desteği sağlıyoruz. Perde yıkama, yorgan-battaniye yıkama ve kuru temizleme hizmetlerimiz de mevcuttur.</p>
-      <h2>Neden Ferah Temizlik Tercih Edilmeli?</h2>
-      <p>Şeffaf fiyatlandırma, profesyonel ekip, modern ekipman, zamanında teslimat ve müşteri memnuniyeti garantisi ile İstanbul Anadolu Yakası'nın güvenilir temizlik firmasıyız. Hemen arayın, ücretsiz keşif randevunuzu oluşturalım.</p>
+      <p>"Buharlı koltuk yıkama" ifadesi piyasada hem ev tipi buharlı cihazlar hem de profesyonel ekstraksiyon makineleri için kullanılmaktadır. Bu ayrımı bilmek, doğru hizmet seçimi açısından önemlidir.</p>
+      <h2>Gerçek Buhar Yöntemi (Steam Cleaning)</h2>
+      <p>Gerçek buhar yöntemi, kuru buhar veya düşük nemli buharı koltuk yüzeyine uygular. Avantajları şunlardır:</p>
+      <ul>
+        <li>120-150°C buhar sıcaklığı bakteri ve akarları öldürür</li>
+        <li>Kimyasal kullanımı minimumdur — hassas alerjikler için uygundur</li>
+        <li>Kuruma süresi kısadır (1-3 saat)</li>
+      </ul>
+      <p>Sınırlamaları: yalnızca yüzey dezenfeksiyonu sağlar; derin lif temizliği yapamaz; katı ve yağlı kirleri çözemez.</p>
+      <h2>Sıcak Su Ekstraksiyonu (Hot Water Extraction)</h2>
+      <p>Profesyonel koltuk yıkamada tercih edilen yöntem genellikle sıcak su ekstraksiyonudur. Temizleme solüsyonu yüksek basınçla koltuk liflerine püskürtülür, ardından güçlü vakum sistemiyle çekilir. Bu yöntem derin liflerden organik kirleri, yağlı lekeleri ve mikroorganizmaları uzaklaştırır.</p>
+      <h2>Ferah Temizlik'te Hangi Yöntem Kullanılır?</h2>
+      <p>Koltuk kumaşına göre uygun yöntemi belirliyoruz: klasik kumaşlarda sıcak su ekstraksiyonu, süet ve nubukta kuru temizleme, deri koltuklarda özel deri bakım protokolü. Bu yaklaşım hem etkinliği artırır hem de kumaşın zarar görmesini önler.</p>
+    `,
+  },
+  {
+    slug: "evde-koltuk-yikama-yontemleri",
+    title: "Evde Koltuk Yıkama: Hangi Yöntemler İşe Yarar, Hangilerinden Kaçınmalısınız?",
+    excerpt:
+      "Evde koltuk yıkama için pratik yöntemler, kullanılabilecek ev ürünleri ve profesyonel temizliğe kıyasla ne kadar etkili oldukları.",
+    date: "2026-05-05",
+    readTime: "9 dk",
+    category: "Koltuk Yıkama",
+    content: `
+      <p>Evde koltuk yıkama; doğru yöntem ve ürünler kullanıldığında hafif kirleri temizlemek ve koltuğun görünümünü tazelemek için işe yarar. Ancak derin temizlik, akar uzaklaştırma ve eski lekeler için profesyonel yardım kaçınılmazdır.</p>
+      <h2>1. Kabartma Tozu + Elektrikli Süpürge</h2>
+      <p>Koltuk yüzeyine bol miktarda kabartma tozu serpin, 30-60 dakika bekleyin. Toz kokuları ve yüzeysel yağ kalıntılarını absorbe eder. Ardından HEPA filtreli elektrikli süpürgeyle alın. Haftalık rutin olarak uygulanabilir.</p>
+      <h2>2. Bulaşık Deterjanı Köpüğü</h2>
+      <p>1 çay kaşığı bulaşık deterjanını 500 ml su ile köpürtün. Yalnızca köpük kısmını temiz bezle koltuk yüzeyine uygulayın, dairesel hareketle çalışın. Su bazlı deterjanlar yüzeysel kiri çözer ancak lif içine nüfuz etmez.</p>
+      <h2>3. Beyaz Sirke Spreyi</h2>
+      <p>1:2 oranında sirke-su karışımı kötü kokuları giderir ve hafif leke izlerini soluklaştırabilir. Renkli kumaşlarda önce gizli bir alanda test edin.</p>
+      <h2>Evde Yapılmaması Gerekenler</h2>
+      <ul>
+        <li>Süet ve nubuk koltukları ıslak bezle silmeyin — kalıcı leke oluşur</li>
+        <li>Koltuk yüzeyine direkt su dökmekten kaçının</li>
+        <li>Çamaşır suyu veya klor içeren ürünler kullanmayın</li>
+      </ul>
+      <h2>Profesyonel Temizlik Ne Zaman Şart?</h2>
+      <p>Derin lekeler, eski birikimlere sahip koltuklar, alerji sorunu yaşayan evler ve özel kumaşlar (süet, nubuk, deri) için profesyonel koltuk yıkama zorunludur. Ferah Temizlik olarak İstanbul Anadolu Yakası'nda kapınıza gelerek tüm koltuk türlerini profesyonelce yıkıyoruz.</p>
     `,
   },
 ];

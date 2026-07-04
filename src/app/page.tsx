@@ -4,13 +4,14 @@ import CTABlock from "@/components/CTABlock";
 import { createPageMetadata } from "@/lib/metadata";
 import { serviceJsonLd } from "@/lib/structured-data";
 import JsonLd from "@/components/JsonLd";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = createPageMetadata({
   title: "Ana Sayfa",
   description:
-    "Ferah Temizlik - İstanbul Anadolu Yakası'nda profesyonel halı yıkama, yerinde koltuk yıkama ve araç koltuk temizliği. Sancaktepe, Sultanbeyli, Pendik, Kartal, Çekmeköy'de güvenilir temizlik hizmeti.",
+    "Ferah Temizlik — İstanbul Anadolu Yakası'nda profesyonel halı yıkama, yerinde koltuk yıkama ve araç koltuk temizliği. Sancaktepe, Sultanbeyli, Pendik, Kartal, Çekmeköy'de güvenilir hizmet.",
   path: "/",
 });
 
@@ -18,55 +19,82 @@ const features = [
   {
     icon: "✨",
     title: "Profesyonel Temizlik",
-    desc: "Anti-alerjik, çevre dostu ürünlerle derinlemesine hijyenik temizlik.",
+    desc: "Anti-alerjik, çevre dostu ürünlerle endüstriyel ekipman kullanarak derinlemesine hijyenik temizlik.",
   },
   {
     icon: "🚚",
     title: "Ücretsiz Servis",
-    desc: "Halı yıkama hizmetlerinde ücretsiz alım-teslim kapınıza kadar.",
+    desc: "Halı yıkama hizmetlerinde ücretsiz alım-teslim. Koltuk yıkamada ekip kapınıza gelir.",
   },
   {
     icon: "📅",
     title: "Kolay Rezervasyon",
-    desc: "Esnek randevu sistemi ve %100 müşteri memnuniyeti garantisi.",
+    desc: "Aynı gün randevu mümkün. WhatsApp'tan fotoğraf gönderin, 15 dakikada fiyat alın.",
   },
 ];
 
 const services = [
   {
     title: "Yerinde Koltuk Yıkama",
-    description: "Ev ve iş yerinize gelerek koltuklarınızı profesyonel ekipmanlarla yıkıyoruz.",
-    image: "/images/services/koltuk/19.webp",
+    description: "Chester, L koltuk, süet, nubuk, keten ve tüm koltuk tiplerinde yerinde profesyonel temizlik.",
+    image: "/images/hizmetler/showcase-koltuk.jpg",
     href: "/hizmetlerimiz#koltuk",
-    alt: "Yerinde koltuk yıkama hizmeti - Ferah Temizlik",
+    alt: "Yerinde koltuk yıkama hizmeti İstanbul Anadolu Yakası",
   },
   {
     title: "Halı Yıkama",
-    description: "Tüm halı türlerinde ücretsiz alım-teslim ile profesyonel halı yıkama.",
-    image: "/images/services/hali/1.webp",
+    description: "Tüm halı türlerinde ücretsiz alım-teslim ile profesyonel yıkama ve kurutma.",
+    image: "/images/hizmetler/showcase-hali.jpg",
     href: "/hizmetlerimiz#hali",
-    alt: "Profesyonel halı yıkama hizmeti - Ferah Temizlik",
+    alt: "Profesyonel halı yıkama ücretsiz alım teslim",
   },
   {
     title: "Araç Koltuk Yıkama",
-    description: "Otomobil koltuklarınızı bulunduğu yerde derinlemesine temizliyoruz.",
-    image: "/images/services/koltuk/22.webp",
+    description: "Otomobilinizin bulunduğu yerde derin temizlik. Deri ve kumaş koltuklar için özel bakım.",
+    image: "/images/hizmetler/showcase-clio-koltuk.jpg",
     href: "/hizmetlerimiz#arac",
-    alt: "Araç koltuk yıkama hizmeti - Ferah Temizlik",
+    alt: "Araç koltuk yıkama yerinde temizlik hizmeti",
   },
   {
-    title: "Perde Yıkama",
-    description: "Stor, zebra ve tül perdeleriniz için profesyonel temizlik hizmeti.",
-    image: "/images/services/perde/1.webp",
-    href: "/hizmetlerimiz#perde",
-    alt: "Perde yıkama hizmeti - Ferah Temizlik",
+    title: "Kuru Temizleme",
+    description: "Süet, nubuk ve hassas kumaşlar için kimyasal solvent ile özel kuru temizleme.",
+    image: "/images/hizmetler/showcase-kuru-temizleme.jpg",
+    href: "/hizmetlerimiz#kuru",
+    alt: "Kuru temizleme hizmeti hassas kumaşlar",
+  },
+];
+
+const beforeAfter = [
+  {
+    image: "/images/ornek-calismalar/koltuk-turkuaz.png",
+    title: "Koltuk Takımı",
+    desc: "Derin lekeler tek seansta giderildi",
+    alt: "Turkuaz koltuk takımı yıkama öncesi ve sonrası",
+  },
+  {
+    image: "/images/ornek-calismalar/arac-koltuk.png",
+    title: "Araç Koltuk",
+    desc: "Kumaş ve deri profesyonel bakım",
+    alt: "Araç koltuk yıkama öncesi ve sonrası",
+  },
+  {
+    image: "/images/ornek-calismalar/koltuk-pembe.png",
+    title: "Kadife Koltuk",
+    desc: "Solmuş kumaş yeniden canlandı",
+    alt: "Kadife koltuk temizleme öncesi ve sonrası",
+  },
+  {
+    image: "/images/ornek-calismalar/koltuk-siyah.png",
+    title: "Koltuk Takımı",
+    desc: "Yüzey lekeleri tamamen temizlendi",
+    alt: "Siyah koltuk takımı yıkama öncesi ve sonrası",
   },
 ];
 
 const steps = [
-  { num: "1", title: "Randevu Al", desc: "Telefon veya WhatsApp ile kolayca randevu oluşturun." },
-  { num: "2", title: "Temizlik", desc: "Uzman ekibimiz adresinize gelerek temizliği gerçekleştirir." },
-  { num: "3", title: "Hijyenin Keyfini Çıkar", desc: "Temiz ve hijyenik ortamınızın tadını çıkarın." },
+  { num: "1", title: "Randevu Al", desc: "Telefon veya WhatsApp ile kolayca randevu oluşturun. Aynı gün müsaitlik sorgulayın." },
+  { num: "2", title: "Ekip Kapınızda", desc: "Uzman ekibimiz belirlenen saatte adresinize gelir, yerinde değerlendirme yapar." },
+  { num: "3", title: "Temizlik Tamamlandı", desc: "Profesyonel ekipmanlarla temizlenen koltuk veya halınız aynı gün kullanıma hazır." },
 ];
 
 export default function HomePage() {
@@ -74,20 +102,15 @@ export default function HomePage() {
     <>
       <JsonLd
         data={[
-          serviceJsonLd(
-            "Yerinde Koltuk Yıkama",
-            "İstanbul Anadolu Yakası'nda yerinde profesyonel koltuk yıkama hizmeti"
-          ),
-          serviceJsonLd(
-            "Halı Yıkama",
-            "Ücretsiz alım-teslim ile profesyonel halı yıkama hizmeti"
-          ),
+          serviceJsonLd("Yerinde Koltuk Yıkama", "İstanbul Anadolu Yakası'nda yerinde profesyonel koltuk yıkama"),
+          serviceJsonLd("Halı Yıkama", "Ücretsiz alım-teslim ile profesyonel halı yıkama hizmeti"),
         ]}
       />
 
       <Hero />
 
-      <section className="section" aria-label="Öne çıkan özellikler">
+      {/* Öne çıkan özellikler */}
+      <section className={`section ${styles.featuresSection}`} aria-label="Öne çıkan özellikler">
         <div className="container">
           <div className={styles.features}>
             {features.map((f) => (
@@ -101,80 +124,120 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Hakkımızda */}
       <section className="section section-alt" aria-label="Hakkımızda">
         <div className="container">
-          <h2 className="section-title">Ferah Temizlik ile Profesyonel Temizlik Hizmeti</h2>
-          <p className="section-subtitle">
-            İstanbul Anadolu Yakası&apos;nın güvenilir temizlik firması
-          </p>
+          <div className={styles.sectionHead}>
+            <h2 className="section-title">Ferah Temizlik ile Profesyonel Temizlik</h2>
+            <p className="section-subtitle">
+              İstanbul Anadolu Yakası&apos;nın güvenilir halı ve koltuk yıkama firması
+            </p>
+          </div>
           <div className={styles.aboutGrid}>
             <div className={styles.aboutText}>
               <p>
-                <strong>Ferah Temizlik</strong> olarak İstanbul Anadolu Yakası&apos;nda halı yıkama,
-                yerinde koltuk yıkama, araç koltuk yıkama ve kuru temizleme hizmetleri sunuyoruz.
-                Özellikle <strong>Sancaktepe, Sultanbeyli, Pendik, Kartal ve Çekmeköy</strong>{" "}
+                <strong>Ferah Temizlik</strong> olarak İstanbul Anadolu Yakası&apos;nda halı
+                yıkama, <strong>yerinde koltuk yıkama</strong>, araç koltuk yıkama ve kuru
+                temizleme hizmetleri sunuyoruz. Özellikle{" "}
+                <strong>Sancaktepe, Sultanbeyli, Pendik, Kartal ve Çekmeköy</strong>{" "}
                 bölgelerinde yoğun olarak hizmet vermekteyiz.
               </p>
               <p>
-                Koltuk yıkama, ev hijyeninin en kritik unsurlarından biridir. Koltuklar günlük
-                kullanımda toz akarı, bakteri ve alerjen maddeler biriktirir. Profesyonel koltuk
-                yıkama hizmetimiz ile koltuklarınızı evinizden çıkarmadan, kapınıza kadar gelerek
-                derinlemesine temizliyoruz.
+                Koltuklar günlük yaşamda toz akarı, bakteri ve alerjenler biriktirir.
+                Profesyonel koltuk yıkama hizmetimiz ile koltuklarınızı evinizden
+                çıkarmadan, kapınıza kadar gelerek{" "}
+                <strong>sıcak su ekstraksiyonu</strong> yöntemiyle derinlemesine
+                temizliyoruz. Tüm işlem 1-2 saat içinde tamamlanır ve koltuklar
+                aynı gün kullanıma hazır hale gelir.
               </p>
               <p>
-                Halı yıkama hizmetimizde halılarınızı adresinizden ücretsiz alıyor, modern
-                tesislerimizde yıkıyor ve temiz halılarınızı kapınıza teslim ediyoruz. Tüm
-                hizmetlerimizde çevre dostu deterjanlar ve ileri teknoloji makineler kullanılmaktadır.
+                Halı yıkamada ise halılarınızı adresinizden <strong>ücretsiz</strong>{" "}
+                alıyor, modern tesislerimizde yıkıyor ve temiz halılarınızı kapınıza
+                teslim ediyoruz. Tüm hizmetlerimizde çevre dostu deterjanlar ve
+                ileri teknoloji makineler kullanılmaktadır.
               </p>
               <Link href="/hakkimizda" className="btn btn-primary">
-                Daha Fazla Bilgi
+                Hakkımızda Daha Fazla
               </Link>
             </div>
             <div className={styles.aboutStats}>
-              <div className={styles.stat}>
-                <strong>5+</strong>
-                <span>İlçede Hizmet</span>
-              </div>
-              <div className={styles.stat}>
-                <strong>45+</strong>
-                <span>Hizmet Çeşidi</span>
-              </div>
-              <div className={styles.stat}>
-                <strong>%100</strong>
-                <span>Memnuniyet</span>
-              </div>
-              <div className={styles.stat}>
-                <strong>7/24</strong>
-                <span>Randevu</span>
-              </div>
+              {[
+                { val: "5+",   lbl: "İlçede Hizmet" },
+                { val: "45+",  lbl: "Hizmet Çeşidi" },
+                { val: "%100", lbl: "Memnuniyet" },
+                { val: "7/24", lbl: "Randevu" },
+              ].map((s) => (
+                <div key={s.lbl} className={styles.stat}>
+                  <strong>{s.val}</strong>
+                  <span>{s.lbl}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
+      {/* Hizmetlerimiz */}
       <section className="section" aria-label="Hizmetlerimiz">
         <div className="container">
-          <h2 className="section-title">Hizmetlerimiz</h2>
-          <p className="section-subtitle">
-            Halı, koltuk, araç koltuk ve perde temizliğinde profesyonel çözümler
-          </p>
-          <div className="grid-4">
+          <div className={styles.sectionHead}>
+            <h2 className="section-title">Hizmetlerimiz</h2>
+            <p className="section-subtitle">
+              Halı, koltuk, araç koltuk ve kuru temizlikte profesyonel çözümler
+            </p>
+          </div>
+          <div className={styles.servicesGrid}>
             {services.map((s) => (
               <ServiceCard key={s.title} {...s} />
             ))}
           </div>
           <div className={styles.centerLink}>
             <Link href="/hizmetlerimiz" className="btn btn-outline">
-              Tüm Hizmetleri Gör
+              Tüm Hizmetleri Gör →
             </Link>
           </div>
         </div>
       </section>
 
-      <section className={`section section-alt ${styles.process}`} aria-label="Nasıl çalışıyoruz">
+      {/* Öncesi & Sonrası */}
+      <section className="section section-alt" aria-label="Örnek çalışmalar">
         <div className="container">
-          <h2 className="section-title">Nasıl Çalışıyoruz?</h2>
-          <p className="section-subtitle">3 kolay adımda profesyonel temizlik hizmeti</p>
+          <div className={styles.sectionHead}>
+            <h2 className="section-title">Öncesi &amp; Sonrası</h2>
+            <p className="section-subtitle">
+              Gerçek çalışmalarımızdan örnekler — kirli koltuklar aynı gün kullanıma hazır hale gelir
+            </p>
+          </div>
+          <div className={styles.baGrid}>
+            {beforeAfter.map((item) => (
+              <article key={item.title} className={`card ${styles.baCard}`}>
+                <div className={styles.baImageWrap}>
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    fill
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 280px"
+                    className={styles.baImage}
+                  />
+                  <span className={styles.baLabel}>Sonrası</span>
+                </div>
+                <div className={styles.baBody}>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Nasıl Çalışıyoruz */}
+      <section className="section" aria-label="Nasıl çalışıyoruz">
+        <div className="container">
+          <div className={styles.sectionHead}>
+            <h2 className="section-title">Nasıl Çalışıyoruz?</h2>
+            <p className="section-subtitle">3 kolay adımda profesyonel temizlik hizmeti</p>
+          </div>
           <div className={styles.steps}>
             {steps.map((step) => (
               <article key={step.num} className={styles.step}>

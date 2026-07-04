@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: clamp(480px, 70vh, 620px);
+  min-height: clamp(500px, 75vh, 660px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -13,7 +13,7 @@
 
 .bgImage {
   object-fit: cover;
-  object-position: center;
+  object-position: center 30%;
 }
 
 .overlay {
@@ -21,8 +21,8 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(15, 118, 110, 0.88) 0%,
-    rgba(13, 92, 86, 0.75) 50%,
+    rgba(13, 92, 86, 0.9) 0%,
+    rgba(15, 118, 110, 0.8) 50%,
     rgba(19, 78, 74, 0.85) 100%
   );
 }
@@ -30,66 +30,110 @@
 .content {
   position: relative;
   z-index: 2;
-  padding: 4rem 1.25rem 5rem;
-  max-width: 720px;
-  animation: fadeUp 0.8s ease-out;
+  padding: 4rem 1.25rem 5.5rem;
+  max-width: 780px;
+  animation: fadeUp 0.75s ease-out both;
 }
 
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .eyebrow {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 800;
-  color: var(--color-white);
-  line-height: 1.15;
+  background: rgba(94, 234, 212, 0.12);
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
   margin-bottom: 1.25rem;
 }
 
+.title {
+  font-size: clamp(2.1rem, 5vw, 3.25rem);
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+
+.br { display: inline; }
+
 .subtitle {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
-  color: rgba(255, 255, 255, 0.92);
-  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.75;
   margin-bottom: 2rem;
+  max-width: 640px;
+}
+
+.subtitle strong {
+  color: var(--color-accent);
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .cta {
   font-size: 0.95rem;
-  padding: 0.9rem 2rem;
-  letter-spacing: 0.03em;
+  padding: 0.85rem 1.75rem;
+  gap: 0.45rem;
+}
+
+.ctaWhatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: #25d366;
+  color: #fff;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.ctaWhatsapp:hover {
+  background: #1da851;
+  transform: translateY(-1px);
 }
 
 .ctaOutline {
-  color: var(--color-white);
-  border-color: var(--color-white);
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.92);
+  border: 2px solid rgba(255,255,255,0.6);
+  transition: border-color var(--transition), background var(--transition);
 }
 
 .ctaOutline:hover {
-  background: var(--color-white);
-  color: var(--color-primary-dark);
+  background: rgba(255,255,255,0.12);
+  border-color: #fff;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
 }
 
 .wave {
@@ -106,13 +150,14 @@
   height: 60px;
 }
 
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .hero {
-    min-height: clamp(420px, 85vh, 560px);
+    min-height: clamp(520px, 90vh, 680px);
   }
 
   .content {
-    padding: 3rem 1rem 4rem;
+    padding: 3rem 1rem 4.5rem;
   }
 
   .actions {
@@ -120,14 +165,16 @@
   }
 
   .cta,
+  .ctaWhatsapp,
   .ctaOutline {
     width: 100%;
+    justify-content: center;
     text-align: center;
   }
+
+  .br { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .content {
-    animation: none;
-  }
+  .content { animation: none; }
 }
