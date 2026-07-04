@@ -6,22 +6,6 @@
   padding: 0;
 }
 
-/* Yazı kopyalamayı engelle */
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Input ve textarea'larda seçime izin ver */
-input, textarea, [contenteditable] {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
 :root {
   --color-primary: #0f766e;
   --color-primary-dark: #0d5c56;
