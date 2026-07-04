@@ -1,0 +1,8 @@
+.breadcrumbs {
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}

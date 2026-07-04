@@ -1,0 +1,78 @@
+.serviceBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.serviceBlock:last-child {
+  margin-bottom: 0;
+}
+
+.reverse {
+  direction: rtl;
+}
+
+.reverse > * {
+  direction: ltr;
+}
+
+.serviceImage {
+  position: relative;
+  height: 320px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.serviceContent {
+  line-height: 1.8;
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.serviceContent p {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.serviceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.serviceList li {
+  background: rgba(15, 118, 110, 0.1);
+  color: var(--color-primary-dark);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .serviceBlock,
+  .reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .serviceImage {
+    height: 240px;
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "lastUpdated": "2026-07-04",
+  "categories": [
+    {
+      "id": "hali",
+      "title": "Halı Yıkama Fiyatları",
+      "unit": "Metrekare",
+      "items": [
+        { "name": "Makine Halıları", "price": 120 },
+        { "name": "İnce Jel Taban Halılar", "price": 120 },
+        { "name": "Overlok", "price": 100 },
+        { "name": "Akrilik Halı", "price": 150 },
+        { "name": "Shaggy (Tüylü) Halılar", "price": 150 },
+        { "name": "Bambu Halı", "price": 180 },
+        { "name": "İpek Halılar", "price": 200 },
+        { "name": "Viskon Halı", "price": 200 },
+        { "name": "Milas Halı", "price": 200 },
+        { "name": "Yün Halı (Makina)", "price": 200 },
+        { "name": "Step Halı", "price": 250 },
+        { "name": "Yün Halı (El Dokuma)", "price": 300 },
+        { "name": "Anadolu Kilimi", "price": 350 },
+        { "name": "Çin Halısı", "price": 300 },
+        { "name": "İran Halısı", "price": 300 }
+      ]
+    },
+    {
+      "id": "koltuk",
+      "title": "Koltuk Yıkama Fiyatları",
+      "unit": "Adet",
+      "items": [
+        { "name": "Tabure", "price": 150 },
+        { "name": "Ofis Sandalyesi", "price": 175 },
+        { "name": "Sandalye", "price": 200 },
+        { "name": "Baza", "price": 200 },
+        { "name": "Puf", "price": 250 },
+        { "name": "Berjer", "price": 750 },
+        { "name": "Çekyat", "price": 750 },
+        { "name": "Yatak Başlığı", "price": 500 },
+        { "name": "Yatak", "price": 1000 },
+        { "name": "Tek Kişilik Set", "price": 1500 },
+        { "name": "L Koltuk Takımı (Klâsik)", "price": 2000 },
+        { "name": "Klâsik Koltuk Takımı", "price": 2500 },
+        { "name": "Keten Koltuk Takımı", "price": 3000 },
+        { "name": "Nubuk Koltuk Takımı", "price": 3000 },
+        { "name": "Süet Koltuk Takımı", "price": 3000 },
+        { "name": "Tay Tüyü Koltuk Takımı", "price": 3000 },
+        { "name": "Araç Koltuk", "price": 3000 },
+        { "name": "Chester Koltuk Takımı", "price": 3500 }
+      ]
+    },
+    {
+      "id": "perde",
+      "title": "Perde Yıkama Fiyatları",
+      "unit": "Adet",
+      "items": [
+        { "name": "Düz Stor Perde", "price": 500 },
+        { "name": "Güneşlik Stor Perde", "price": 500 },
+        { "name": "Tül Stor", "price": 500 },
+        { "name": "Zebra Perde", "price": 600 }
+      ]
+    },
+    {
+      "id": "yorgan",
+      "title": "Yorgan/Battaniye Yıkama Fiyatları",
+      "unit": "Adet",
+      "items": [
+        { "name": "Polar Battaniye", "price": 350 },
+        { "name": "Elyaf Yorgan", "price": 400 },
+        { "name": "Pamuk Battaniye", "price": 400 },
+        { "name": "Pamuk Yorgan", "price": 600 },
+        { "name": "Yün Battaniye", "price": 500 },
+        { "name": "Yün Yorgan", "price": 500 },
+        { "name": "Bambu Battaniye", "price": 450 },
+        { "name": "Kaz Tüyü Yorgan", "price": 700 }
+      ]
+    }
+  ],
+  "extras": [
+    { "title": "Ücretsiz Alım-Teslim", "description": "Halı yıkama hizmetlerinde tüm fiyatlara dahil" },
+    { "title": "Yerinde Koltuk Yıkama", "description": "Ev ve iş yerinize gelerek profesyonel temizlik" },
+    { "title": "Ücretsiz Keşif", "description": "Kesin fiyat için ücretsiz keşif ve bilgilendirme" },
+    { "title": "Kurumsal Hizmetler", "description": "Ofis, otel ve işletmeler için özel fiyatlandırma" }
+  ]
+}

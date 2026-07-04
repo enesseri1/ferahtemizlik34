@@ -1,0 +1,22 @@
+.loading {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .loading {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading {
+    height: 300px;
+  }
+}
