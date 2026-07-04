@@ -62,6 +62,16 @@ export default function Navbar() {
             <WhatsAppIcon />
             <span className={styles.btnLabel}>WhatsApp</span>
           </a>
+          <a
+            href={siteConfig.instagram}
+            className={styles.instaBtn}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram sayfamız"
+          >
+            <InstagramIcon />
+            <span className={styles.instaBtnLabel}>Instagram</span>
+          </a>
           <button
             type="button"
             className={styles.menuToggle}
