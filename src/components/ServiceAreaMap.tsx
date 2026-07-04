@@ -9,18 +9,34 @@ interface DistrictFeatureCollection {
   type: "FeatureCollection";
   features: Array<{
     type: "Feature";
-    properties: { name?: string };
+    properties: { name?: string; [key: string]: unknown };
     geometry: GeoJSON.Geometry;
   }>;
 }
 
-const DISTRICT_COLORS: Record<string, string> = {
-  Sancaktepe: "#ef4444",
-  Sultanbeyli: "#ef4444",
-  Pendik: "#ef4444",
-  Kartal: "#ef4444",
-  Cekmekoy: "#ef4444",
-};
+/* Yoğun hizmet bölgeleri → koyu kırmızı */
+const PRIMARY_DISTRICTS = new Set([
+  "Sancaktepe", "Sultanbeyli", "Pendik", "Kartal", "Çekmeköy",
+]);
+
+function getStyle(name: string): L.PathOptions {
+  if (PRIMARY_DISTRICTS.has(name)) {
+    return {
+      color: "#b91c1c",
+      weight: 3,
+      opacity: 1,
+      fillColor: "#ef4444",
+      fillOpacity: 0.38,
+    };
+  }
+  return {
+    color: "#f87171",
+    weight: 1.5,
+    opacity: 0.7,
+    fillColor: "#fca5a5",
+    fillOpacity: 0.12,
+  };
+}
 
 export default function ServiceAreaMap() {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -32,52 +48,57 @@ export default function ServiceAreaMap() {
     let cancelled = false;
 
     const initMap = async () => {
-      const res = await fetch("/data/districts.geojson");
+      const res = await fetch("/data/all-districts.geojson");
       const districtsData: DistrictFeatureCollection = await res.json();
 
       if (cancelled || !mapRef.current) return;
 
-    const map = L.map(mapRef.current, {
-      scrollWheelZoom: true,
-      dragging: true,
-      touchZoom: true,
-      doubleClickZoom: true,
-    });
+      const map = L.map(mapRef.current, {
+        scrollWheelZoom: true,
+        dragging: true,
+        touchZoom: true,
+        doubleClickZoom: true,
+      });
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 18,
-    }).addTo(map);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18,
+      }).addTo(map);
 
-    const bounds = L.latLngBounds([]);
+      const bounds = L.latLngBounds([]);
 
-    districtsData.features.forEach((feature) => {
-      const name = feature.properties.name || "";
-      const color = DISTRICT_COLORS[name] || "#ef4444";
+      /* Primary ilçeleri en üste çizmek için önce secondary'leri ekle */
+      const secondaryFeatures = districtsData.features.filter(
+        (f) => !PRIMARY_DISTRICTS.has(f.properties.name || "")
+      );
+      const primaryFeatures = districtsData.features.filter(
+        (f) => PRIMARY_DISTRICTS.has(f.properties.name || "")
+      );
 
-      L.geoJSON(feature as GeoJSON.GeoJsonObject, {
-        style: {
-          color,
-          weight: 3,
-          opacity: 0.9,
-          fillColor: color,
-          fillOpacity: 0.15,
-        },
-      })
-        .bindPopup(`<strong>${name}</strong><br/>Hizmet bölgesi`)
-        .addTo(map);
+      [...secondaryFeatures, ...primaryFeatures].forEach((feature) => {
+        const name = feature.properties.name || "";
+        const isPrimary = PRIMARY_DISTRICTS.has(name);
+        const popupText = isPrimary
+          ? `<strong>${name}</strong><br/>Yoğun hizmet bölgesi`
+          : `<strong>${name}</strong><br/>Hizmet bölgesi`;
 
-      const layer = L.geoJSON(feature as GeoJSON.GeoJsonObject);
-      bounds.extend(layer.getBounds());
-    });
+        L.geoJSON(feature as GeoJSON.GeoJsonObject, {
+          style: getStyle(name),
+        })
+          .bindPopup(popupText)
+          .addTo(map);
 
-    if (bounds.isValid()) {
-      map.fitBounds(bounds, { padding: [30, 30] });
-    } else {
-      map.setView([40.98, 29.22], 11);
-    }
+        const layer = L.geoJSON(feature as GeoJSON.GeoJsonObject);
+        bounds.extend(layer.getBounds());
+      });
 
-    mapInstance.current = map;
+      if (bounds.isValid()) {
+        map.fitBounds(bounds, { padding: [20, 20] });
+      } else {
+        map.setView([40.98, 29.22], 11);
+      }
+
+      mapInstance.current = map;
     };
 
     initMap();
@@ -94,9 +115,12 @@ export default function ServiceAreaMap() {
   return (
     <div className={styles.wrapper}>
       <div ref={mapRef} className={styles.map} aria-label="Hizmet bölgeleri haritası" role="application" />
-      <p className={styles.legend}>
-        Kırmızı çizgilerle işaretli bölgeler: Sancaktepe, Sultanbeyli, Pendik, Kartal ve Çekmeköy
-      </p>
+      <div className={styles.legend}>
+        <span className={styles.legendPrimary} />
+        <span>Yoğun hizmet: Sancaktepe, Sultanbeyli, Pendik, Kartal, Çekmeköy</span>
+        <span className={styles.legendSecondary} />
+        <span>Tüm Anadolu Yakası&apos;na hizmet verilmektedir</span>
+      </div>
     </div>
   );
 }

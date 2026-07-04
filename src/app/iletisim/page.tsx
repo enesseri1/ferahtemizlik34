@@ -49,18 +49,12 @@ export default function IletisimPage() {
                   <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
                 </li>
                 <li>
-                  <strong>Instagram</strong>
-                  <a href={siteConfig.instagram} target="_blank" rel="noopener noreferrer">
-                    @{siteConfig.instagramHandle}
-                  </a>
-                </li>
-                <li>
                   <strong>Çalışma Saatleri</strong>
                   <span>{siteConfig.workingHours}</span>
                 </li>
                 <li>
                   <strong>Hizmet Bölgesi</strong>
-                  <span>İstanbul Anadolu Yakası — Sancaktepe, Sultanbeyli, Pendik, Kartal, Çekmeköy</span>
+                  <span>İstanbul Anadolu Yakası</span>
                 </li>
               </ul>
 

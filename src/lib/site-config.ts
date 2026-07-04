@@ -3,9 +3,9 @@ export const siteConfig = {
   tagline: "İstanbul Anadolu Yakası Halı ve Koltuk Yıkama",
   domain: "https://ferahtemizlik34.com",
   phone: "+905427632861",
-  phoneDisplay: "+90 542 763 28 61",
+  phoneDisplay: "0542 763 28 61",
   phoneHref: "tel:+905427632861",
-  email: "Ferahtemizlik1@gmail.com",
+  email: "ferahtemizlik1@gmail.com",
   whatsapp: "905427632861",
   whatsappMessage:
     "Merhaba, Ferah Temizlik hizmetleriniz hakkında bilgi almak istiyorum.",

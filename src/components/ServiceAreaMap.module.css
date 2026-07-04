@@ -13,9 +13,34 @@
 
 .legend {
   margin-top: 0.75rem;
-  font-size: 0.875rem;
+  font-size: 0.82rem;
   color: var(--color-text-muted);
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+  justify-content: center;
+}
+
+.legendPrimary,
+.legendSecondary {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legendPrimary {
+  background: #ef4444;
+  border: 2px solid #b91c1c;
+  opacity: 0.85;
+}
+
+.legendSecondary {
+  background: #fca5a5;
+  border: 1.5px solid #f87171;
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
