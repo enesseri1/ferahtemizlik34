@@ -125,6 +125,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .badges {
+    justify-content: center;
+  }
 }
 
 .badge {

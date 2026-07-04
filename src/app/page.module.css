@@ -67,6 +67,14 @@
   margin-top: 0.5rem;
 }
 
+/* Hakkımızda butonu her zaman ortada */
+.aboutBtnWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
 .aboutStats {
   display: grid;
   grid-template-columns: 1fr 1fr;

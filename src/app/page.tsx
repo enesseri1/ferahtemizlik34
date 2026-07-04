@@ -1,17 +1,17 @@
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import CTABlock from "@/components/CTABlock";
+import BeforeAfterGallery from "@/components/BeforeAfterGallery";
 import { createPageMetadata } from "@/lib/metadata";
 import { serviceJsonLd } from "@/lib/structured-data";
 import JsonLd from "@/components/JsonLd";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = createPageMetadata({
   title: "Ana Sayfa",
   description:
-    "Ferah Temizlik — İstanbul Anadolu Yakası'nda profesyonel halı yıkama, yerinde koltuk yıkama ve araç koltuk temizliği. Sancaktepe, Sultanbeyli, Pendik, Kartal, Çekmeköy'de güvenilir hizmet.",
+    "Ferah Temizlik — İstanbul Anadolu Yakası'nın tüm ilçelerinde profesyonel halı yıkama, yerinde koltuk yıkama ve araç koltuk temizliği. Sancaktepe, Sultanbeyli, Pendik, Kartal, Çekmeköy ve daha fazlası.",
   path: "/",
 });
 
@@ -130,39 +130,40 @@ export default function HomePage() {
           <div className={styles.sectionHead}>
             <h2 className="section-title">Ferah Temizlik ile Profesyonel Temizlik</h2>
             <p className="section-subtitle">
-              İstanbul Anadolu Yakası&apos;nın güvenilir halı ve koltuk yıkama firması
+              İstanbul Anadolu Yakası&apos;nın tüm ilçelerinde güvenilir halı ve koltuk yıkama
             </p>
           </div>
           <div className={styles.aboutGrid}>
             <div className={styles.aboutText}>
               <p>
-                <strong>Ferah Temizlik</strong> olarak İstanbul Anadolu Yakası&apos;nda halı
-                yıkama, <strong>yerinde koltuk yıkama</strong>, araç koltuk yıkama ve kuru
-                temizleme hizmetleri sunuyoruz. Özellikle{" "}
-                <strong>Sancaktepe, Sultanbeyli, Pendik, Kartal ve Çekmeköy</strong>{" "}
-                bölgelerinde yoğun olarak hizmet vermekteyiz.
+                <strong>Ferah Temizlik</strong> olarak İstanbul Anadolu Yakası&apos;nın{" "}
+                <strong>tüm ilçelerinde</strong> halı yıkama,{" "}
+                <strong>yerinde koltuk yıkama</strong>, araç koltuk yıkama ve kuru temizleme
+                hizmetleri sunuyoruz. Kadıköy&apos;den Şile&apos;ye, Beykoz&apos;dan
+                Tuzla&apos;ya kadar tüm Anadolu Yakası&apos;na hizmet götürüyoruz.
               </p>
               <p>
                 Koltuklar günlük yaşamda toz akarı, bakteri ve alerjenler biriktirir.
                 Profesyonel koltuk yıkama hizmetimiz ile koltuklarınızı evinizden
                 çıkarmadan, kapınıza kadar gelerek{" "}
                 <strong>sıcak su ekstraksiyonu</strong> yöntemiyle derinlemesine
-                temizliyoruz. Tüm işlem 1-2 saat içinde tamamlanır ve koltuklar
+                temizliyoruz. Tüm işlem 1-2 saat içinde tamamlanır, koltuklar
                 aynı gün kullanıma hazır hale gelir.
               </p>
               <p>
-                Halı yıkamada ise halılarınızı adresinizden <strong>ücretsiz</strong>{" "}
+                Halı yıkamada halılarınızı adresinizden <strong>ücretsiz</strong>{" "}
                 alıyor, modern tesislerimizde yıkıyor ve temiz halılarınızı kapınıza
-                teslim ediyoruz. Tüm hizmetlerimizde çevre dostu deterjanlar ve
-                ileri teknoloji makineler kullanılmaktadır.
+                teslim ediyoruz.
               </p>
-              <Link href="/hakkimizda" className="btn btn-primary">
-                Hakkımızda Daha Fazla
-              </Link>
+              <div className={styles.aboutBtnWrap}>
+                <Link href="/hakkimizda" className="btn btn-primary">
+                  Hakkımızda Daha Fazla
+                </Link>
+              </div>
             </div>
             <div className={styles.aboutStats}>
               {[
-                { val: "5+",   lbl: "İlçede Hizmet" },
+                { val: "14",   lbl: "İlçede Hizmet" },
                 { val: "45+",  lbl: "Hizmet Çeşidi" },
                 { val: "%100", lbl: "Memnuniyet" },
                 { val: "7/24", lbl: "Randevu" },
@@ -205,29 +206,10 @@ export default function HomePage() {
           <div className={styles.sectionHead}>
             <h2 className="section-title">Öncesi &amp; Sonrası</h2>
             <p className="section-subtitle">
-              Gerçek çalışmalarımızdan örnekler — kirli koltuklar aynı gün kullanıma hazır hale gelir
+              Gerçek çalışmalarımızdan örnekler — görsele tıklayarak büyütebilirsiniz
             </p>
           </div>
-          <div className={styles.baGrid}>
-            {beforeAfter.map((item) => (
-              <article key={item.title} className={`card ${styles.baCard}`}>
-                <div className={styles.baImageWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 280px"
-                    className={styles.baImage}
-                  />
-                  <span className={styles.baLabel}>Sonrası</span>
-                </div>
-                <div className={styles.baBody}>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <BeforeAfterGallery items={beforeAfter} />
         </div>
       </section>
 

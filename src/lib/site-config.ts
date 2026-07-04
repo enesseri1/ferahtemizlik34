@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsapp: "905427632861",
   whatsappMessage:
     "Merhaba, Ferah Temizlik hizmetleriniz hakkında bilgi almak istiyorum.",
-  instagram: "https://www.instagram.com/ferahtemizlik34",
+  instagram: "https://www.instagram.com/ferahtemizlik34?igsh=MW96dW5iZ2VnOHA0NA==",
   instagramHandle: "ferahtemizlik34",
   address: {
     street: "Sancaktepe, İstanbul",
@@ -18,22 +18,13 @@ export const siteConfig = {
     country: "TR",
   },
   serviceRegions: [
-    "Sancaktepe",
-    "Sultanbeyli",
-    "Pendik",
-    "Kartal",
-    "Çekmeköy",
-    "Ataşehir",
-    "Maltepe",
-    "Tuzla",
-    "İstanbul Anadolu Yakası",
+    "Kadıköy", "Üsküdar", "Beykoz", "Ümraniye", "Ataşehir",
+    "Maltepe", "Kartal", "Pendik", "Tuzla", "Sultanbeyli",
+    "Sancaktepe", "Çekmeköy", "Şile", "Adalar",
   ],
   primaryRegions: [
-    "Sancaktepe",
-    "Sultanbeyli",
-    "Pendik",
-    "Kartal",
-    "Çekmeköy",
+    "Sancaktepe", "Sultanbeyli", "Pendik", "Kartal", "Çekmeköy",
+    "Ataşehir", "Maltepe", "Tuzla", "Ümraniye",
   ],
   workingHours: "Pazartesi - Cumartesi: 08:00 - 20:00",
   navLinks: [
