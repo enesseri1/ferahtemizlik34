@@ -19,20 +19,59 @@
   direction: ltr;
 }
 
-.serviceImage {
-  position: relative;
-  height: 320px;
+/* Görsel — tıklanabilir link sarmalayıcı */
+.serviceImageLink {
+  display: block;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.serviceImage {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
 }
 
 .image {
   object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.serviceImageLink:hover .image {
+  transform: scale(1.04);
+}
+
+/* WhatsApp overlay — hover'da görünür */
+.waOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 211, 102, 0.82);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.serviceImageLink:hover .waOverlay {
+  opacity: 1;
 }
 
 .serviceContent {
   line-height: 1.8;
+}
+
+/* Başlık linki */
+.serviceTitleLink {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .serviceTitle {
@@ -40,6 +79,33 @@
   font-weight: 700;
   color: var(--color-primary-dark);
   margin-bottom: 1rem;
+  transition: color 0.2s;
+}
+
+.serviceTitleLink:hover .serviceTitle {
+  color: #25d366;
+}
+
+/* WhatsApp butonu */
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+  padding: 0.65rem 1.4rem;
+  background: #25d366;
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 2px 8px rgba(37,211,102,0.3);
+}
+
+.waBtn:hover {
+  background: #1da851;
+  transform: translateY(-2px);
 }
 
 .serviceContent p {
